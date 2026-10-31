@@ -18,4 +18,9 @@ spec:
         image: 223249277559.dkr.ecr.us-west-1.amazonaws.com/myntra:latest
         ports:
           - containerPort: 3000   # Use port 3000
+        env:
+        - name: HOST
+          value: "0.0.0.0"
+        - name: PORT
+          value: "3000"
 
